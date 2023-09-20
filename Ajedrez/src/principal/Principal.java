@@ -27,8 +27,12 @@ public class Principal {
 				peon.imprimirMov();
 			} else if (pieza == 2) {
 				Torre torre = new Torre(posicionX, posicionY);
+				torre.calcularMovimiento(posicionX, posicionY);
+				torre.imprimirMov();
 			} else if (pieza == 3) {
 				Reina reina = new Reina(posicionX, posicionY);
+				reina.calcularMovimiento(posicionX, posicionY);
+				reina.imprimirMov();
 			} else if (pieza == 4) {
 				Rey rey = new Rey(posicionX, posicionY);
 			} else if (pieza == 5) {
