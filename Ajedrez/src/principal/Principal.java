@@ -35,10 +35,16 @@ public class Principal {
 				reina.imprimirMov();
 			} else if (pieza == 4) {
 				Rey rey = new Rey(posicionX, posicionY);
+				rey.calcularMovimiento(posicionX, posicionY);
+				rey.imprimirMov();
 			} else if (pieza == 5) {
 				Alfil alfil = new Alfil(posicionX, posicionY);
+				alfil.calcularMovimientos(posicionX, posicionY);
+				alfil.imprimirMov();
 			} else if (pieza == 6) {
 				Caballo caballo = new Caballo(posicionX, posicionY);
+				caballo.calcularMovimiento(posicionX, posicionY);
+				caballo.imprimirMov();
 			}
 		}
 	}

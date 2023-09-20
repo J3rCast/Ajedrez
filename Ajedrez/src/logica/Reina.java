@@ -8,6 +8,8 @@ public class Reina extends Pieza{
 	}
 	
 	public void calcularMovimiento(int posicionX, int posicionY) {
+		posicionX--;
+		posicionY--;
 		for (int y = posicionY + 1; y <= 7; y++) {
             this.movimientos++;
         }
